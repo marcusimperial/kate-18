@@ -1,5 +1,6 @@
-export default [
+const sets = [
     {
+        id: 'lavenders',
         name: '18 Lavenders',
         people: [
             'Ronald Garcia', 'Ezekiel Garcia', 'Brian Alfaro', 'Dos Garcia', 'Rolando Garcia', 'Jun Garcia',
@@ -8,6 +9,7 @@ export default [
         ]
     },
     {
+        id: 'candles',
         name: '18 Candles',
         people: [
             'Conchita Garcia', 'Liza Alfaro', 'Liz Garcia', 'Lian Alfaro', 'Marcela Quitco', 'Angel Sanchez',
@@ -16,17 +18,13 @@ export default [
         ]
     },
     {
+        id: 'treasures',
         name: '18 Treasures',
         people: [
             'Reign Cinco', 'Kimiko Copo', 'Ashzaira Vazchel', 'Linda Albovias', 'Joy Onofre', 'Ms. Florencia Male',
             'Mr. Gabriel Araneta', 'Teacher Bhi Santos', 'Kiko Pe Benito'
         ]
-    },
-    {
-        name: '18 Shots',
-        people: [
-            'Hannah Dela Cruz', 'Sasa Meija', 'Nica Paño', 'Gaby Katigbak', 'Brent Dela Cruz', 'Sandro Mapa',
-            'Raffy Sunga', 'Monty Aleta', 'Tobey Ramos'
-        ]
     }
-]
+];
+
+export default sets;
