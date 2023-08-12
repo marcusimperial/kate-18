@@ -7,11 +7,6 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import { usePathname } from 'next/navigation';
 
-export const metadata = {
-  title: 'Eliza Kate @ 18',
-  description: "Eliza Kate's 18th Birthday Debut",
-}
-
 const elegante = localFont({ src: './assets/Elegante.woff', variable: '--font-elegante' });
 const georgia = localFont({ src: './assets/Georgia.woff', variable: '--font-georgia' });
 
@@ -25,12 +20,12 @@ export default function RootLayout({ children }) {
     AOS.init();
     window.onbeforeunload = () => sessionStorage.clear();
     window.onunload = () => sessionStorage.clear();
-    playMusic();
+    // playMusic();
   }, []);
 
   useEffect(() => {
     console.log('path');
-    playMusic();
+    // playMusic();
   }, [path])
 
   const playMusic = () => {
