@@ -3,14 +3,16 @@
 import { FaCalendar, FaBars, FaTimes  } from 'react-icons/fa';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
     const router = useRouter();
 
     const [mobileClicked, setMobileClicked] = useState(false);
 
-    window.onresize = () => setMobileClicked(false);
+    useEffect(() => {
+        window.onresize = () => setMobileClicked(false);
+    }, []);
 
     return (
         <div className={`grid w-full auto-rows-min md:grid-flow-col justify-items-center md:justify-items-auto md:justify-between items-center bg-purpureus text-purple px-6 md:px-12 lg:px-24 md:p-0.5 top-0 z-50 md:h-auto ${mobileClicked ? 'max-h-[100dvh] h-full fixed ease-in-out duration-300' : 'max-h-[100px] sticky ease-out duration-300'}`}>

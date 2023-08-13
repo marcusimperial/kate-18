@@ -1,12 +1,12 @@
 "use client";
 
 import { initializeApp } from 'firebase/app';
-import { getFirestore, doc, updateDoc, getDoc } from 'firebase/firestore';
+import { getFirestore, doc, updateDoc, getDoc, query, collection, where, getDocs } from 'firebase/firestore';
 
-initializeApp({ 
-    apiKey: process.env.NEXT_PUBLIC_API_KEY, 
-    authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN, 
-    projectId: process.env.NEXT_PUBLIC_PROJECT_iD 
+initializeApp({
+    apiKey: process.env.NEXT_PUBLIC_API_KEY,
+    authDomain: process.env.NEXT_PUBLIC_AUTH_DOMAIN,
+    projectId: process.env.NEXT_PUBLIC_PROJECT_ID
 });
 
 const db = getFirestore();
@@ -14,20 +14,39 @@ const db = getFirestore();
 export const getData = async (key, value) => {
     try {
         // get doc based on key 
-        const docRef = (await getDoc(doc(db, `${key}/${value}`))).data();
-        if (!docRef) return false;
-        return docRef?.ref;
+        const docRef = doc(db, `${key}/${value}`);
+        const actualDoc = await getDoc(docRef);
+        if (!actualDoc) return false;
+        console.log(actualDoc.id);
+        return { ...actualDoc.data(), id: actualDoc.id };
     } catch (e) {
         console.error(e);
         return false;
     }
 };
 
-export const updateData = async (docId) => {
+export const updateData = async (docId, confirm) => {
     try {
         // update doc based on ref 
-        await updateDoc(doc(db, `guests/${docId}`), { confirm: true });
+        console.log('setting confirm', confirm)
+        await updateDoc(doc(db, `guests/${docId}`), { confirm });
         return true;
+    } catch (e) {
+        console.error(e);
+        return false;
+    }
+};
+
+export const getGroupMembers = async (groupName) => {
+    try {
+        let arr = [];
+        const ref = query(collection(db, "groups"), where("value", "==", groupName));
+        const snap = await getDocs(ref);
+        snap.forEach(doc => {
+            console.log(doc.id, doc.data());
+            arr.push({ ...doc.data(), id: doc.id });
+        });
+        return arr;
     } catch (e) {
         console.error(e);
         return false;

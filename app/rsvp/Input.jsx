@@ -1,12 +1,12 @@
 "use client"; 
 
-import { FaCalendarCheck, FaInfoCircle, FaSearch, FaCircleNotch } from 'react-icons/fa';
+import { FaArrowRight, FaInfoCircle, FaSearch, FaCircleNotch } from 'react-icons/fa';
 
-const Input = ({ clicked, onConfirm, onChange }) => {
+const Input = ({ clicked, onSearch, onChange }) => {
 
     return (
         <div className="grid items-center justify-items-center p-3 gap-4">
-            <h1 data-aos="fade-in" data-aos-delay="300" className="text-8xl md:text-9xl font-elegante text-purpureus text-center">Rsvp for Eliza Kate's 18th</h1>
+            <h1 data-aos="fade-in" data-aos-delay="300" className="text-8xl md:text-9xl font-elegante text-purpureus text-center">Rsvp for Eliza Kate&apos;s 18th</h1>
 
             <div data-aos="fade-in" data-aos-delay="500" className="grid gap-1">
                 <div className="flex items-center gap-1 p-0.5 border-b-2 border-glaucous rounded-lg">
@@ -20,9 +20,9 @@ const Input = ({ clicked, onConfirm, onChange }) => {
                 </div>
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="800" onClick={onConfirm} className="flex items-center place-content-center p-3 gap-2 text-purpureus bg-lavender/30 rounded-xl select-none hover:bg-lavender/60">
-                { !clicked?.status ? <FaCalendarCheck size="25px" /> : <FaCircleNotch className="animate-spin" size="25px" />}
-                <h1 className="text-3xl md:text-4xl">{ !clicked?.status ? 'Confirm my slot' : 'Confirming my slot' }</h1>
+            <div data-aos="fade-up" data-aos-delay="800" onClick={onSearch} className="flex items-center place-content-center p-3 gap-2 text-purpureus bg-lavender/30 rounded-xl select-none hover:bg-lavender/60">
+                { !clicked?.status ? <FaArrowRight size="25px" /> : <FaCircleNotch className="animate-spin" size="25px" />}
+                <h1 className="text-3xl md:text-4xl">{ !clicked?.status ? 'Continue with Info' : 'Searching for You' }</h1>
             </div> 
 
         </div>
