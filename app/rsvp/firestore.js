@@ -17,8 +17,9 @@ export const getData = async (key, value) => {
         const docRef = doc(db, `${key}/${value}`);
         const actualDoc = await getDoc(docRef);
         if (!actualDoc) return false;
-        console.log(actualDoc.id);
-        return { ...actualDoc.data(), id: actualDoc.id };
+        const data = actualDoc.data();
+        if (!data) return false;
+        return { ...data, id: actualDoc.id };
     } catch (e) {
         console.error(e);
         return false;

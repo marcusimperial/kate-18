@@ -11,12 +11,16 @@ const Input = ({ clicked, onSearch, onChange }) => {
             <div data-aos="fade-in" data-aos-delay="500" className="grid gap-1">
                 <div className="flex items-center gap-1 p-0.5 border-b-2 border-glaucous rounded-lg">
                     <FaSearch size="25px" />
-                    <input onChange={onChange} type="text" className="bg-transparent text-center text-3xl md:text-5xl outline-none placeholder:text-glaucous/40 w-full" placeholder="email or number"/>
+                    <input onChange={onChange} type="text" className="bg-transparent text-center text-3xl md:text-4xl outline-none placeholder:text-glaucous/40 w-full" placeholder="email or number"/>
                 </div>
                 
                 <div className="flex items-center place-content-center gap-1">
                     <FaInfoCircle size="15px" />
                     <h1 className="text-md md:text-2xl italic">Ensure you&apos;ve given your details to Kate or her family</h1>
+                </div>
+                <div className="flex items-center place-content-center gap-1">
+                    <FaInfoCircle size="15px" />
+                    <h1 className="text-md md:text-2xl italic">Do not include any spaces. For numbers, no leading zeroes.</h1>
                 </div>
             </div>
 

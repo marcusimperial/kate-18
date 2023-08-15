@@ -27,7 +27,7 @@ const Checkbox = ({ member, members, setMembers }) => {
     };
 
     return (
-        <div className="grid items-center justify-items-center">
+        <div className="grid">
             <div className={`flex items-center gap-2 select-none ${confirmed ? 'opacity-100' : 'opacity-70'}`}>
                 { confirmed ? <FaCheckSquare onClick={onUnCheck} size="35px" /> : <FaSquare onClick={onCheck} size="35px"  />}
                 <h1 className="text-3xl md:text-5xl">{member?.name}</h1>

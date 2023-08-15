@@ -13,10 +13,11 @@ const Page = () => {
                     <div className="grid items-center justify-items-center">
                         <h1 data-aos="fade-in" className="text-2xl md:text-3xl text-center">Join us as we celebrate</h1>
                         <h1 data-aos="fade-in" data-aos-delay="400" className="text-8xl md:text-9xl font-elegante text-purpureus text-center">Eliza Kate&apos;s 18th Birthday</h1>
-                        <h1 data-aos="fade-in" data-aos-delay="800" className="text-3xl md:text-4xl text-center font-bold">On September 30, 2023, 5:00 PM at the EDSA Shangri-La Hotel</h1>
-                        <h1 data-aos="fade-in" data-aos-delay="800" className="text-2xl md:text-3xl text-center font-bold">Ortigas Center, Mandaluyong City</h1>
-                        <div className="flex py-4">
-                            <Link className="text-2xl md:text-3xl hover:underline select-non" href="/rsvp">RSVP today &gt; </Link>
+                        <h1 data-aos="fade-in" data-aos-delay="800" className="text-3xl md:text-4xl text-center">September 30, 2023, 5:00 PM</h1>
+                        <h1 data-aos="fade-in" data-aos-delay="800" className="text-2xl md:text-3xl text-center">EDSA Shangri-La Hotel</h1>
+                        <div className="flex py-4 gap-3">
+                            <Link className="text-2xl md:text-3xl hover:underline select-none" href="/sets">Find more &gt; </Link>
+                            <Link className="text-2xl md:text-3xl hover:underline select-none" href="/rsvp">RSVP today &gt; </Link>
                         </div>
                     </div>
                 </div>

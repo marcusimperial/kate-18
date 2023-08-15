@@ -4,7 +4,7 @@ const sets = [
         name: '18 Lavenders',
         people: [
             'Ronald Garcia', 'Ezekiel Garcia', 'Brian Alfaro', 'Dos Garcia', 'Rolando Garcia', 'Jun Garcia',
-            'KG Mateo', 'Claine Mateo', 'Rapha Quitco', 'Zach Bolante', 'Kuya Romeo', 'Matt Tan',
+            'KG Mateo', 'Claine Mateo', 'Rapha Quitco', 'Zach Bolante', 'Romeo Jamisola', 'Matt Tan',
             'Bianco Mariazeta', 'Emman Escalada', 'Miguel Madrid', 'Tobey Ramos', 'Liann Azarcon', 'Marcus Imperial'
         ]
     },
@@ -12,8 +12,8 @@ const sets = [
         id: 'candles',
         name: '18 Candles',
         people: [
-            'Conchita Garcia', 'Liza Alfaro', 'Liz Garcia', 'Lian Alfaro', 'Marcela Quitco', 'Angel Sanchez',
-            'Nicole Garcia', 'Alec Esteban', 'Lyka Sanchez', 'Queenie Garcia', 'Lana Garcia', 'Deac Tirse Carpio',
+            'Conchita Garcia', 'Liza Alfaro', 'Liz Garcia', 'Linda Albovias', 'Nicole Garcia', 'Angel Sanchez',
+            'Teacher Bhi Santos', 'Alec Esteban', 'Chelsea Talampas', 'Queenie Garcia', 'Lana Garcia', 'Deac Tirse Carpio',
             'Tina Demerin', 'Lana Bernabe', 'Trixie Lim', 'Faith Reyes', 'Sophie Yau Lim', 'Maggie Pittard'
         ]
     },
@@ -21,8 +21,9 @@ const sets = [
         id: 'treasures',
         name: '18 Treasures',
         people: [
-            'Reign Cinco', 'Kimiko Copo', 'Ashzaira Vazchel', 'Linda Albovias', 'Joy Onofre', 'Ms. Florencia Male',
-            'Mr. Gabriel Araneta', 'Teacher Bhi Santos', 'Kiko Pe Benito'
+            'Lian Alfaro', 'Kimiko Copo', 'Ashzaira Vazchel', 'Joy Onofre', 'Florencia Male', 'Gabriel Araneta',
+            'Hannah Razon', 'Milo Magpantay', 'Lyka Sanchez', 'Claudette Higwit', 'Yuri Llaneta', 'Rhodora Yacat',
+            'Ronald Cruz', 'Mac Ronald Dela Cruz', 'Ronald Abelida', 'Dr. Itzel Sta. Ana'
         ]
     }
 ];

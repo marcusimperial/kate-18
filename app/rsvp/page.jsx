@@ -36,22 +36,6 @@ const Page = () => {
 
     const [members, setMembers] = useState([]);
     const [user, setUser] = useState({});
- 
-    // const onConfirm = async () => {
-    //     if (!value) return;
-    //     if (clicked?.status) return;
-    //     updateClicked({ status: true });
-    //     // mark that it is clicked
-    //     // attempt to get data 
-    //     let id = await getData('emails', value);
-    //     if (!id) id = await getData('numbers', value);
-    //     if (!id) return updateClicked({ status: true, success: false, running: true });
-    //     // return err
-    //     const op = await updateData(id);
-    //     if (!op) return updateClicked({ status: true, success: false, running: true });
-    //     return updateClicked({ status: true, success: true, running: true });
-    //     // else complete
-    // };
 
     const onSearch = async () => {
         if (!value) return;
@@ -74,7 +58,7 @@ const Page = () => {
     };
 
     const onConfirm = () => {
-        if (!members.some(({ confirm }) => confirm)) return;
+        if (!members.some(({ confirm, confirmStaged }) => confirm || confirmStaged)) return;
         for (const { confirmStaged, id } of members) if (confirmStaged) updateData(id, true);
         updateClicked({ status: true, running: true, success: true, user: user });
     };
