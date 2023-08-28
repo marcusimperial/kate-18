@@ -3,8 +3,6 @@
 import Navbar from './Navbar';
 import Link from 'next/link';
 import { FaChevronDown, FaDirections } from 'react-icons/fa';
-import images from './images';
-import Image from 'next/image'
 import Carousel from './Carousel';
 
 const Page = () => {
@@ -44,7 +42,7 @@ const Page = () => {
                                 <h1 data-aos="fade-in" data-aos-delay="400" className="text-8xl md:text-9xl font-elegante text-purpureus text-center">Where?</h1>
                                 <div className="flex flex-col gap-1">
                                     <h1 data-aos="fade-in" data-aos-delay="400" className="text-3xl lg:text-4xl text-center">September 30, 2023, 5:00 PM</h1>
-                                    <h1 data-aos="fade-in" data-aos-delay="400" className="text-2xl lg:text-3xl text-center">Marquee Tent Hall, EDSA Shangri-La Hotel</h1>
+                                    <h1 data-aos="fade-in" data-aos-delay="400" className="text-2xl lg:text-3xl text-center">The Marquee, EDSA Shangri-La Hotel</h1>
                                 </div>
                                 <div data-aos="fade-in" data-aos-delay="400" onClick={getDirections} className="flex items-center p-1 lg:p-2 gap-2 border-2 border-lavender text-lavender rounded-lg select-none hover:scale-[0.98]">
                                     <h1 className="text-2xl lg:text-3xl">Get Directions</h1>
@@ -55,8 +53,8 @@ const Page = () => {
                             <div className="grid justify-items-center gap-2">
                                 <h1 data-aos="fade-in" data-aos-delay="800" className="text-8xl md:text-9xl font-elegante text-purpureus text-center">Dress Code?</h1>
                                 <div className="flex flex-col gap-1">
-                                    <h1 data-aos="fade-in" data-aos-delay="800" className="text-3xl lg:text-4xl text-center">Any Pastel Color Except for Purple</h1>
-                                    <h1 data-aos="fade-in" data-aos-delay="800" className="text-2xl lg:text-3xl text-center">Formal Dress for Women, Suit and Tie for Men</h1>
+                                    <h1 data-aos="fade-in" data-aos-delay="800" className="text-3xl lg:text-4xl text-center">Any Pastel Color except for Purple</h1>
+                                    <h1 data-aos="fade-in" data-aos-delay="800" className="text-2xl lg:text-3xl text-center">Formal Dress for Women, Slacks and Polo for Men</h1>
                                 </div>
                                 <div className="flex items-center">
                                     <img data-aos-offset="0" data-aos="fade-in" data-aos-delay="800" className="h-[55px] center" src="/pallete.png" />
@@ -86,7 +84,7 @@ const Page = () => {
                         <h1 data-aos="fade-in" data-aos-delay="200" className="text-7xl md:text-8xl lg:text-9xl font-elegante text-purpureus text-center py-1">Meet the Family</h1>
                         <div className="grid md:grid-cols-2 md:gap-x-6 md:gap-3 p-3">
                             <div data-aos="fade-in" data-aos-offset="0" data-aos-delay="150" className="grid">
-                                <h1 className="text-5xl md:text-6xl text-center">Ronald Garcia</h1>
+                                <h1 className="text-5xl md:text-6xl text-center">Ronaldo Garcia</h1>
                                 <h1 data-aos="fade-in" data-aos-offset="0" data-aos-delay="150" className="text-2xl md:text-3xl lg:text-4xl text-center">Eliza Kate&lsquo;s Father</h1>
                             </div>
                             <div data-aos="fade-in" data-aos-offset="0" data-aos-delay="300" className="grid">

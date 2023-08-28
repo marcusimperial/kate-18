@@ -30,10 +30,10 @@ const Navbar = () => {
                     <h1 className="text-5xl md:text-xl lg:text-2xl font-georgia" onClick={() => onBrowse('/')}>Home</h1>
                 </div>
                 <div className="flex items-center p-1 border-gold hover:border-b-2 select-none">
-                    <h1 className="text-5xl md:text-xl lg:text-2xl font-georgia" onClick={() => onBrowse('/sets#candles')}>18 Candles</h1>
+                    <h1 className="text-5xl md:text-xl lg:text-2xl font-georgia" onClick={() => onBrowse('/sets#lavenders')}>18 Lavenders</h1>
                 </div>
                 <div className="flex items-center p-1 border-gold hover:border-b-2 select-none">
-                    <h1 className="text-5xl md:text-xl lg:text-2xl font-georgia" onClick={() => onBrowse('/sets#lavenders')}>18 Lavenders</h1>
+                    <h1 className="text-5xl md:text-xl lg:text-2xl font-georgia" onClick={() => onBrowse('/sets#candles')}>18 Candles</h1>
                 </div>
                 <div className="flex items-center p-1 border-gold hover:border-b-2 select-none">
                     <h1 className="text-5xl md:text-xl lg:text-2xl font-georgia" onClick={() => onBrowse('/sets#treasures')}>18 Treasures</h1>

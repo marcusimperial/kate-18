@@ -33,6 +33,13 @@ export default function RootLayout({ children }) {
       <head>
         <title>Eliza Kate @ 18</title>
         <meta name="description" content="Eliza Kate's 18th Birthday Debut" />
+        <meta property="og:title" content="Eliza Kate @ 18" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://elizakate18.web.app/k18.png" />
+        <meta property="og:url" content="https://elizakate18.web.app" />
+        <meta name="twitter:title" content="Eliza Kate @ 18"/>
+        <meta name="twitter:description" content="Eliza Kate's 18th Birthday Debut"/>
+        <meta name="twitter:image" content="https://elizakate18.web.app/k18.png"/>
       </head>
       <body onClick={playMusic} className={`${elegante.variable} ${georgia.variable} font-sans`}>{children}</body>
     </html>
