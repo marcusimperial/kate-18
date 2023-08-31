@@ -26,9 +26,10 @@ const Page = () => {
                         <div className="grid justify-items-center items-center">
                             <h1 data-aos="fade-in" className="text-2xl md:text-3xl text-center">Join us as we celebrate</h1>
                             <h1 data-aos="fade-in" data-aos-delay="400" className="text-8xl md:text-9xl font-elegante text-purpureus text-center">Eliza Kate&apos;s 18th Birthday</h1>
-                            <div data-aos="fade-in" data-aos-delay="800" className="flex py-4 gap-3">
+                            <div data-aos="fade-in" data-aos-delay="800" className="flex flex-wrap place-content-center items-center py-4 gap-3">
                                 <Link className="text-2xl md:text-3xl hover:underline select-none" href="/sets">Find more &gt; </Link>
                                 <Link className="text-2xl md:text-3xl hover:underline select-none" href="/rsvp">RSVP today &gt; </Link>
+                                <Link className="text-2xl md:text-3xl hover:underline select-none" href="/debutant">The Debutant &gt; </Link>
                             </div>
                         </div>
                     </div>
