@@ -18,7 +18,7 @@ const Confirm = ({ user, members, setMembers, onConfirm }) => {
                 {members.map((member, i) => (<Checkbox members={members} member={member} setMembers={setMembers} key={`m${i}`} />))}
             </div>
 
-            <div data-aos="fade-up" data-aos-delay="1000" onClick={onConfirm} className="flex items-center place-content-center p-3 gap-2 text-purple bg-purpureus/80 rounded-xl select-none hover:bg-purpureus">
+            <div onClick={onConfirm} className="flex items-center place-content-center p-3 gap-2 text-purple bg-purpureus/80 rounded-xl select-none hover:bg-purpureus">
                 <FaCalendarCheck size="35px" /> 
                 <h1 className="text-3xl md:text-4xl">Confirm Attendance</h1>
             </div> 

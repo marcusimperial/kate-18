@@ -32,7 +32,13 @@ const Page = () => {
     };
     const [value, setValue] = useState('');
 
-    const onChange = (e) => setValue(e.target.value || '');
+    const onChange = (e) => {
+        let string = e.target.value.replace(/\s/g,'');
+        if (string.startsWith(`0`)) string = string.slice(1, string.length);
+        else if (string.startsWith(`63`)) string = string.slice(2, string.length);
+        else if (string.startsWith(`+63`)) string = string.slice(3, string.length);
+        setValue(string);
+    };
 
     const [members, setMembers] = useState([]);
     const [user, setUser] = useState({});
